@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.Observable;
 import java.util.Observer;
 
+import com.example.a1107513806.viernestaller1.serializable.Instrucciones;
+
 import processing.core.PApplet;
 import test.control.Comunicacion;
 import test.control.ControlBaseDatos;
@@ -43,6 +45,13 @@ public class Logic implements Observer{
 	@Override
 	public void update(Observable o, Object arg) {
 		System.out.println("entro-update");
+		if(arg instanceof Instrucciones){
+			Instrucciones ins= (Instrucciones) arg;
+		Bolita nuevaDos = new Bolita(ins.x, ins.y);
+		controlBD.agregarBolita(nuevaDos);
+		
+		}
+		
 		
 	}
 	

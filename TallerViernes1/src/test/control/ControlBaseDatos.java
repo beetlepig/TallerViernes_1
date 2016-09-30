@@ -35,8 +35,8 @@ public class ControlBaseDatos {
 	
 	public void agregarBolita(Bolita b){
 		XML bolitaXMl = new XML("bolita");
-		bolitaXMl.setInt("x", b.getX());
-		bolitaXMl.setInt("y", b.getY());
+		bolitaXMl.setInt("x",  (int) b.getX());
+		bolitaXMl.setInt("y",  (int) b.getY());
 		bolitaXMl.setInt("r", b.getR());
 		bolitaXMl.setInt("g", b.getG());
 		bolitaXMl.setInt("b", b.getB());

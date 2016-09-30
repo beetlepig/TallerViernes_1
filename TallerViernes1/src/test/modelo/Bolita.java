@@ -3,14 +3,14 @@ package test.modelo;
 import java.util.Random;
 
 public class Bolita {
-	private int x;
-	private int y;
+	private float x;
+	private float y;
 	private int r;
 	private int g;
 	private int b;
 	private int radio;
 	
-	public Bolita(int x, int y){
+	public Bolita(float x, float y){
 		this.x = x;
 		this.y = y;
 		Random random = new Random();
@@ -31,13 +31,13 @@ public class Bolita {
 		this.radio = radio;
 	}
 	
-	public int getX() {
+	public float getX() {
 		return x;
 	}
 	public void setX(int x) {
 		this.x = x;
 	}
-	public int getY() {
+	public float getY() {
 		return y;
 	}
 	public void setY(int y) {

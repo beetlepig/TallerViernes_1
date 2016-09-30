@@ -1,4 +1,4 @@
-package serializable;
+package com.example.a1107513806.viernestaller1.serializable;
 
 import java.io.Serializable;
 
